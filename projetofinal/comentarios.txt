@@ -1,0 +1,20 @@
+
+/*
+	A função atualizarDisplay é responsável por atualizar um display de 7 segmentos utilizando um registrador de deslocamento, controlado pelos pinos storePin, shiftPin e dataPin.
+
+	Objetivo da Função
+	O objetivo da função atualizarDisplay é enviar um número decimal (dado) para um display de 7 segmentos utilizando um registrador de deslocamento conectado aos pinos especificados.
+
+	Parâmetros da Função
+	storePin: Pino conectado ao pino de armazenamento (Latch) do registrador de deslocamento.
+	shiftPin: Pino conectado ao pino de controle de deslocamento (Clock).
+	dataPin: Pino conectado ao pino de dados do registrador de deslocamento.
+	dado: Número inteiro que representa o valor a ser exibido no display de 7 segmentos.
+
+	Funcionamento Detalhado
+	Baixar o Pino de Deslocamento (shiftPin): O primeiro passo é colocar o pino de deslocamento (shiftPin) em nível baixo (LOW). Isso prepara o registrador de deslocamento para receber novos dados.
+	Selecionar o Valor do Display (dado): Em seguida, a função verifica o valor de dado e seleciona o padrão binário correspondente para ser enviado ao display de 7 segmentos através da função shiftRegister.
+		Se dado for 0 a 9, então são enviados os valores correspondentes aos segmentos dos displays de 7 segmentos. Por exemplo, dado == 0 corresponde a enviar 63 para o registrador de deslocamento (representando o número 0 em binário para um display de 7 segmentos).
+		Se dado for 10, então envia-se 0 para apagar o display de 7 segmentos, possivelmente para limpar a exibição anterior.
+	Subir o Pino de Deslocamento (shiftPin): Após enviar o dado correspondente para o registrador de deslocamento, o pino de deslocamento (shiftPin) é colocado em nível alto (HIGH). Isso efetivamente move os dados do registrador para os segmentos do display de 7 segmentos.
+*/
