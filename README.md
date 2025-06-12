@@ -1,6 +1,6 @@
 # Controlador de Temperatura e Umidade com STM32F411
 
-<a href="https://youtu.be/TjvKqfbe9nc">Apresentação do projeto no YouTube</a>
+<a href="https://www.youtube.com/watch?v=th4r7HzCY8c&t=13s&ab_channel=DayanaFreitas">Apresentação do projeto no YouTube</a>
 
 Projeto final desenvolvido para a disciplina de Sistemas Microcontrolados, ministrada pelo professor Delvanei Gomes Bandeira Jr, no ano de 2024/2025, na UTFPR.
 
